@@ -144,12 +144,12 @@ class ModalNotificationViewController: UIViewController {
             let shouldDismiss = abs(velocity.x / velocityAdjust) > minimumVelocityRequiredForPush || abs(velocity.y / velocityAdjust) > minimumVelocityRequiredForPush
             if shouldDismiss {
                 let offsetFromCenter = UIOffsetMake(boxLocation.x - CGRectGetMidX(currentViewController!.view.bounds), boxLocation.y - CGRectGetMidY(currentViewController!.view.bounds))
-                let radius = sqrtf(powf(offsetFromCenter.horizontal, 2.0) + powf(offsetFromCenter.vertical, 2.0))
-                let pushVelocity = sqrtf(powf(velocity.x, 2.0) + powf(velocity.y, 2.0))
+                let radius = sqrtf(powf(Float(offsetFromCenter.horizontal), 2.0) + powf(Float(offsetFromCenter.vertical), 2.0))
+                let pushVelocity = sqrtf(powf(Float(velocity.x), 2.0) + powf(Float(velocity.y), 2.0))
                 
                 // calculate angles needed for angular velocity formula
-                let velocityAngle = atan2f(velocity.y, velocity.x)
-                var locationAngle = atan2f(offsetFromCenter.vertical, offsetFromCenter.horizontal)
+                let velocityAngle = atan2f(Float(velocity.y), Float(velocity.x))
+                var locationAngle = atan2f(Float(offsetFromCenter.vertical), Float(offsetFromCenter.horizontal))
                 if (locationAngle > 0) {
                     locationAngle -= Float(M_PI * 2.0)
                 }
@@ -157,32 +157,32 @@ class ModalNotificationViewController: UIViewController {
                 // angle (θ) is the angle between the push vector (V) and vector component parallel to radius, so it should always be positive
                 let angle = fabsf(fabsf(velocityAngle) - fabsf(locationAngle))
                 // angular velocity formula: w = (abs(V) * sin(θ)) / abs(r)
-                var angularVelocity = fabsf((fabsf(pushVelocity) * sinf(angle)) / fabsf(radius))
+                var angularVelocity = Float(fabsf((fabsf(pushVelocity) * sinf(angle)) / fabsf(radius)))
                 
                 // rotation direction is dependent upon which corner was pushed relative to the center of the view
                 // when velocity.y is positive, pushes to the right of center rotate clockwise, left is counterclockwise
-                var direction = (location.x < view.center.x) ? -1.0 : 1.0;
+                var direction = Float((location.x < view.center.x) ? -1.0 : 1.0);
                 // when y component of velocity is negative, reverse direction
                 if (velocity.y < 0) { direction *= -1; }
                 
                 // amount of angular velocity should be relative to how close to the edge of the view the force originated
                 // angular velocity is reduced the closer to the center the force is applied
                 // for angular velocity: positive = clockwise, negative = counterclockwise
-                let xRatioFromCenter = fabsf(offsetFromCenter.horizontal) / (CGRectGetWidth(currentViewController!.view.frame) / 2.0)
-                let yRatioFromCetner = fabsf(offsetFromCenter.vertical) / (CGRectGetHeight(currentViewController!.view.frame) / 2.0)
+                let xRatioFromCenter = fabsf(Float(offsetFromCenter.horizontal)) / (Float(CGRectGetWidth(currentViewController!.view.frame)) / 2.0)
+                let yRatioFromCetner = fabsf(Float(offsetFromCenter.vertical)) / (Float(CGRectGetHeight(currentViewController!.view.frame)) / 2.0)
                 
                 // apply device scale to angular velocity
                 angularVelocity *= Float(deviceAngularScale)
                 // adjust angular velocity based on distance from center, force applied farther towards the edges gets more spin
                 angularVelocity *= (xRatioFromCenter + yRatioFromCetner) / 2.0
                 
-                itemBehaviour!.addAngularVelocity(Float(angularVelocity * direction), forItem: currentViewController!.view)
+                itemBehaviour!.addAngularVelocity(CGFloat(angularVelocity * direction), forItem: currentViewController!.view)
                 animator.addBehavior(pushBehaviour)
-                pushBehaviour!.pushDirection = CGVectorMake(Float(velocity.x / velocityAdjust), Float(velocity.y / velocityAdjust))
+                pushBehaviour!.pushDirection = CGVectorMake(CGFloat(velocity.x / velocityAdjust), CGFloat(velocity.y / velocityAdjust))
                 pushBehaviour!.active = true
                 
-                let maximumDismissDelay = 0.5
-                let delay = maximumDismissDelay - (pushVelocity / 10000.0)
+                let maximumDismissDelay: Float = 0.5
+                let delay = CGFloat(maximumDismissDelay - (Float(pushVelocity) / 10000.0))
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), {
                     self.addNextViewController(animated: true)
                 });
