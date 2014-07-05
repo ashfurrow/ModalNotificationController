@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ModalNotificationViewController: UIViewController {
+protocol ModalNotificationViewControllerDelegate {
+    
+}
 
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        // Custom initialization
+class ModalNotificationViewController: UIViewController {
+    let delegate: ModalNotificationViewControllerDelegate
+    
+    init(delegate: ModalNotificationViewControllerDelegate) {
+        self.delegate = delegate;
+        super.init(nibName: nil, bundle: nil)
     }
 
     override func viewDidLoad() {
@@ -22,21 +27,5 @@ class ModalNotificationViewController: UIViewController {
         
         self.view.backgroundColor = UIColor.purpleColor()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // #pragma mark - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
