@@ -15,6 +15,10 @@ protocol ModalNotificationViewControllerDelegate {
 
 class ModalNotificationViewController: UIViewController {
     let delegate: ModalNotificationViewControllerDelegate
+    @lazy var animator: UIDynamicAnimator = {
+        let animator = UIDynamicAnimator(referenceView: self.view)
+        return animator
+    }()
     var currentViewController: UIViewController?
     var index: UInt {
         didSet {
