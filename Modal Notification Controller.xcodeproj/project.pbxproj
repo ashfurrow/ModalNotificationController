@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E4522EF1968454C003661FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4522EE1968454C003661FC /* AppDelegate.swift */; };
+		5E4522F11968454C003661FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4522F01968454C003661FC /* ViewController.swift */; };
+		5E4522F41968454C003661FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4522F21968454C003661FC /* Main.storyboard */; };
+		5E4522F61968454C003661FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4522F51968454C003661FC /* Images.xcassets */; };
+		5E4523021968454C003661FC /* Modal_Notification_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4523011968454C003661FC /* Modal_Notification_ControllerTests.swift */; };
+		5E45230C196846B3003661FC /* ModalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45230B196846B3003661FC /* ModalNotificationViewController.swift */; };
+		5E45230E19684804003661FC /* ModalNotificationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45230D19684804003661FC /* ModalNotificationAnimator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E4522FC1968454C003661FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E4522E11968454C003661FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E4522E81968454C003661FC;
+			remoteInfo = "Modal Notification Controller";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E4522E91968454C003661FC /* Modal Notification Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Modal Notification Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4522ED1968454C003661FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E4522EE1968454C003661FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E4522F01968454C003661FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E4522F31968454C003661FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E4522F51968454C003661FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5E4522FB1968454C003661FC /* Modal Notification ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Modal Notification ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4523001968454C003661FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E4523011968454C003661FC /* Modal_Notification_ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal_Notification_ControllerTests.swift; sourceTree = "<group>"; };
+		5E45230B196846B3003661FC /* ModalNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNotificationViewController.swift; sourceTree = "<group>"; };
+		5E45230D19684804003661FC /* ModalNotificationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNotificationAnimator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E4522E61968454C003661FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4522F81968454C003661FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E4522E01968454C003661FC = {
+			isa = PBXGroup;
+			children = (
+				5E45230B196846B3003661FC /* ModalNotificationViewController.swift */,
+				5E45230D19684804003661FC /* ModalNotificationAnimator.swift */,
+				5E4522EB1968454C003661FC /* Modal Notification Controller */,
+				5E4522FE1968454C003661FC /* Modal Notification ControllerTests */,
+				5E4522EA1968454C003661FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E4522EA1968454C003661FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E4522E91968454C003661FC /* Modal Notification Controller.app */,
+				5E4522FB1968454C003661FC /* Modal Notification ControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E4522EB1968454C003661FC /* Modal Notification Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E4522EE1968454C003661FC /* AppDelegate.swift */,
+				5E4522F01968454C003661FC /* ViewController.swift */,
+				5E4522F21968454C003661FC /* Main.storyboard */,
+				5E4522F51968454C003661FC /* Images.xcassets */,
+				5E4522EC1968454C003661FC /* Supporting Files */,
+			);
+			path = "Modal Notification Controller";
+			sourceTree = "<group>";
+		};
+		5E4522EC1968454C003661FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E4522ED1968454C003661FC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E4522FE1968454C003661FC /* Modal Notification ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E4523011968454C003661FC /* Modal_Notification_ControllerTests.swift */,
+				5E4522FF1968454C003661FC /* Supporting Files */,
+			);
+			path = "Modal Notification ControllerTests";
+			sourceTree = "<group>";
+		};
+		5E4522FF1968454C003661FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E4523001968454C003661FC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E4522E81968454C003661FC /* Modal Notification Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4523051968454C003661FC /* Build configuration list for PBXNativeTarget "Modal Notification Controller" */;
+			buildPhases = (
+				5E4522E51968454C003661FC /* Sources */,
+				5E4522E61968454C003661FC /* Frameworks */,
+				5E4522E71968454C003661FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Modal Notification Controller";
+			productName = "Modal Notification Controller";
+			productReference = 5E4522E91968454C003661FC /* Modal Notification Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E4522FA1968454C003661FC /* Modal Notification ControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4523081968454C003661FC /* Build configuration list for PBXNativeTarget "Modal Notification ControllerTests" */;
+			buildPhases = (
+				5E4522F71968454C003661FC /* Sources */,
+				5E4522F81968454C003661FC /* Frameworks */,
+				5E4522F91968454C003661FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E4522FD1968454C003661FC /* PBXTargetDependency */,
+			);
+			name = "Modal Notification ControllerTests";
+			productName = "Modal Notification ControllerTests";
+			productReference = 5E4522FB1968454C003661FC /* Modal Notification ControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E4522E11968454C003661FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Ash Furrow";
+				TargetAttributes = {
+					5E4522E81968454C003661FC = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					5E4522FA1968454C003661FC = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 5E4522E81968454C003661FC;
+					};
+				};
+			};
+			buildConfigurationList = 5E4522E41968454C003661FC /* Build configuration list for PBXProject "Modal Notification Controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E4522E01968454C003661FC;
+			productRefGroup = 5E4522EA1968454C003661FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E4522E81968454C003661FC /* Modal Notification Controller */,
+				5E4522FA1968454C003661FC /* Modal Notification ControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E4522E71968454C003661FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4522F41968454C003661FC /* Main.storyboard in Resources */,
+				5E4522F61968454C003661FC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4522F91968454C003661FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E4522E51968454C003661FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4522F11968454C003661FC /* ViewController.swift in Sources */,
+				5E45230E19684804003661FC /* ModalNotificationAnimator.swift in Sources */,
+				5E45230C196846B3003661FC /* ModalNotificationViewController.swift in Sources */,
+				5E4522EF1968454C003661FC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4522F71968454C003661FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4523021968454C003661FC /* Modal_Notification_ControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E4522FD1968454C003661FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E4522E81968454C003661FC /* Modal Notification Controller */;
+			targetProxy = 5E4522FC1968454C003661FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E4522F21968454C003661FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E4522F31968454C003661FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E4523031968454C003661FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E4523041968454C003661FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E4523061968454C003661FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Modal Notification Controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E4523071968454C003661FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Modal Notification Controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5E4523091968454C003661FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Modal Notification Controller.app/Modal Notification Controller";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Modal Notification ControllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		5E45230A1968454C003661FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Modal Notification Controller.app/Modal Notification Controller";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Modal Notification ControllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E4522E41968454C003661FC /* Build configuration list for PBXProject "Modal Notification Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4523031968454C003661FC /* Debug */,
+				5E4523041968454C003661FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E4523051968454C003661FC /* Build configuration list for PBXNativeTarget "Modal Notification Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4523061968454C003661FC /* Debug */,
+				5E4523071968454C003661FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5E4523081968454C003661FC /* Build configuration list for PBXNativeTarget "Modal Notification ControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4523091968454C003661FC /* Debug */,
+				5E45230A1968454C003661FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E4522E11968454C003661FC /* Project object */;
+}
