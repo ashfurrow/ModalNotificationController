@@ -169,7 +169,13 @@ class ModalNotificationViewController: UIViewController {
                 pushBehaviour!.pushDirection = CGVectorMake(Float(velocity.x / velocityAdjust), Float(velocity.y / velocityAdjust))
                 pushBehaviour!.active = true
                 
-                // TODO: Move to next view controller
+                let maximumDismissDelay = 0.5
+                let delay = maximumDismissDelay - (pushVelocity / 10000.0)
+                
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), { 
+                    self.addNextViewController()
+                });
+                
             } else {
                 animator.addBehavior(snapBehaviour)
                 animator.addBehavior(pushBehaviour)
