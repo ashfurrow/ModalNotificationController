@@ -46,6 +46,11 @@ class ModalNotificationViewController: UIViewController {
         self.view.backgroundColor = UIColor.clearColor()
         addNextViewController()
     }
+    
+    override func viewDidAppear(animated: Bool)  {
+        super.viewDidAppear(animated)
+        self.view.backgroundColor = UIColor.blackColor()
+    }
 
     func addNextViewController(animated: Bool = false) {
         if let currentViewController = currentViewController {
