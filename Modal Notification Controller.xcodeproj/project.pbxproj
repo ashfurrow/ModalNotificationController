@@ -418,6 +418,7 @@
 				5E4523071968454C003661FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E4523081968454C003661FC /* Build configuration list for PBXNativeTarget "Modal Notification ControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +427,7 @@
 				5E45230A1968454C003661FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
