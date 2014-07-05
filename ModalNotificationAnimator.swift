@@ -54,6 +54,8 @@ class ModalNotificationAnimator: NSObject, UIViewControllerAnimatedTransitioning
                 fromViewController.view.alpha = 0.0
             }, completion: { (value: Bool) in
                 transitionContext.completeTransition(true)
+                // This following line is to work around a bug in the iOS 8 beta (2)
+                UIApplication.sharedApplication().keyWindow!.addSubview(toViewController.view)
             })
         }
     }
