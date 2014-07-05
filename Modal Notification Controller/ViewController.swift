@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
+class ViewController: UIViewController, UIViewControllerTransitioningDelegate, ModalNotificationViewControllerDelegate {
     @IBAction func presentButtonWasPressed(sender: UIButton) {
-        let viewController = ModalNotificationViewController(nibName: nil, bundle: nil)
+        let viewController = ModalNotificationViewController(delegate: self)
         viewController.transitioningDelegate = self;
         viewController.modalPresentationStyle = .Custom;
         presentViewController(viewController, animated: true, completion: nil)
@@ -22,6 +22,16 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
     func animationControllerForDismissedController(dismissed: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
         return ModalNotificationAnimator()
+    }
+    
+    func numberOfViewControllers() -> Int  {
+        return NSIntegerMax
+    }
+    
+    func viewControllerAtIndex(index: UInt) -> UIViewController {
+        let viewController = UIViewController(nibName: nil, bundle: nil)
+        viewController.view.backgroundColor = UIColor.orangeColor()
+        return viewController
     }
 }
 
