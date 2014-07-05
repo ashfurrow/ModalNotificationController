@@ -47,7 +47,7 @@ class ModalNotificationViewController: UIViewController {
         addNextViewController()
     }
 
-    func addNextViewController() {
+    func addNextViewController(animated: Bool = false) {
         if let currentViewController = currentViewController {
             currentViewController.willMoveToParentViewController(nil)
             currentViewController.removeFromParentViewController()
@@ -65,6 +65,13 @@ class ModalNotificationViewController: UIViewController {
             view.addSubview(currentViewController.view)
             currentViewController.didMoveToParentViewController(self)
             addBehavioursToCurrentController()
+            
+            if (animated) {
+                currentViewController.view.alpha = 0.0
+                UIView.animateWithDuration(0.3, animations: {
+                    currentViewController.view.alpha = 1.0
+                })
+            }
         }
         
         index++
@@ -171,9 +178,8 @@ class ModalNotificationViewController: UIViewController {
                 
                 let maximumDismissDelay = 0.5
                 let delay = maximumDismissDelay - (pushVelocity / 10000.0)
-                
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), { 
-                    self.addNextViewController()
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), {
+                    self.addNextViewController(animated: true)
                 });
                 
             } else {
