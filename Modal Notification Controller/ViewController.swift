@@ -25,7 +25,7 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate, M
     }
     
     func numberOfViewControllers() -> Int  {
-        return NSIntegerMax
+        return 3
     }
     
     func viewControllerAtIndex(index: UInt) -> UIViewController {

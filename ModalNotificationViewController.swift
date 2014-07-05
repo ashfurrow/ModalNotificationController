@@ -107,7 +107,7 @@ class ModalNotificationViewController: UIViewController {
     }
     
     func checkForLastViewController() {
-        if index == delegate.numberOfViewControllers() {
+        if index == delegate.numberOfViewControllers() + 1 {
             self.presentingViewController?.dismissModalViewControllerAnimated(true)
         }
     }
