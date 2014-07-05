@@ -1,0 +1,3 @@
+[submodule "ScalarArithmetic"]
+	path = ScalarArithmetic
+	url = git@github.com:seivan/ScalarArithmetic.git

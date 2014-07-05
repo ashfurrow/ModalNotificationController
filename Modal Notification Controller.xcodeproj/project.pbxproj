@@ -14,6 +14,7 @@
 		5E4523021968454C003661FC /* Modal_Notification_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4523011968454C003661FC /* Modal_Notification_ControllerTests.swift */; };
 		5E45230C196846B3003661FC /* ModalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45230B196846B3003661FC /* ModalNotificationViewController.swift */; };
 		5E45230E19684804003661FC /* ModalNotificationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45230D19684804003661FC /* ModalNotificationAnimator.swift */; };
+		5E452311196868AF003661FC /* ScalarArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E452310196868AF003661FC /* ScalarArithmetic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		5E4523011968454C003661FC /* Modal_Notification_ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal_Notification_ControllerTests.swift; sourceTree = "<group>"; };
 		5E45230B196846B3003661FC /* ModalNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNotificationViewController.swift; sourceTree = "<group>"; };
 		5E45230D19684804003661FC /* ModalNotificationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNotificationAnimator.swift; sourceTree = "<group>"; };
+		5E452310196868AF003661FC /* ScalarArithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalarArithmetic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				5E45230B196846B3003661FC /* ModalNotificationViewController.swift */,
 				5E45230D19684804003661FC /* ModalNotificationAnimator.swift */,
 				5E4522EB1968454C003661FC /* Modal Notification Controller */,
+				5E45230F196868AF003661FC /* ScalarArithmetic */,
 				5E4522FE1968454C003661FC /* Modal Notification ControllerTests */,
 				5E4522EA1968454C003661FC /* Products */,
 			);
@@ -113,6 +116,15 @@
 				5E4523001968454C003661FC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E45230F196868AF003661FC /* ScalarArithmetic */ = {
+			isa = PBXGroup;
+			children = (
+				5E452310196868AF003661FC /* ScalarArithmetic.swift */,
+			);
+			name = ScalarArithmetic;
+			path = ScalarArithmetic/ScalarArithmetic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +228,7 @@
 			files = (
 				5E4522F11968454C003661FC /* ViewController.swift in Sources */,
 				5E45230E19684804003661FC /* ModalNotificationAnimator.swift in Sources */,
+				5E452311196868AF003661FC /* ScalarArithmetic.swift in Sources */,
 				5E45230C196846B3003661FC /* ModalNotificationViewController.swift in Sources */,
 				5E4522EF1968454C003661FC /* AppDelegate.swift in Sources */,
 			);

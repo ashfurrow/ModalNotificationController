@@ -125,6 +125,13 @@ class ModalNotificationViewController: UIViewController {
             
             let minimumVelocityRequiredForPush = 50.0
             
+            let shouldDismiss = abs(velocity.x / velocityAdjust) > minimumVelocityRequiredForPush || abs(velocity.y / velocityAdjust) > minimumVelocityRequiredForPush
+            if shouldDismiss {
+                
+            } else {
+                animator.addBehavior(snapBehaviour)
+                animator.addBehavior(pushBehaviour)
+            }
             animator.addBehavior(snapBehaviour)
             animator.addBehavior(pushBehaviour)
         }
