@@ -1,7 +1,7 @@
 ModalNotificationController
 ===========================
 
-This is a demonstration of how to present Slingshot-style notification using Swift. Developed at the [SwiftCrunch](http://swiftcrunch.com) hackathon. A work-in-progress. 
+This is a demonstration of how to present Slingshot-style notification using Swift. Developed at the [SwiftCrunch](http://swiftcrunch.com) hackathon. 
 
 The Goal
 ----------------
@@ -22,9 +22,9 @@ After presenting the `ModalNotificationViewController`, that controller will que
 Current Status
 ----------------
 
-This is still a work-in-progress. Here's what we've got so far.
+Mostly done. I'll turn it into a CocoaPod once [CocoaPods supports Swift](https://github.com/CocoaPods/CocoaPods/pull/2222). 
 
-![Screenshot](http://f.cl.ly/items/13341h0v0V242Z1a1s0i/2014-07-05%2021_06_32.gif)
+![Screenshot](http://cloud.ashfurrow.com/image/2M2V1h3H2g0e/2014-07-06%2012_00_37.gif)
 
 How to Use
 ----------------
