@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol ModalNotificationViewControllerDelegate {
+@objc protocol ModalNotificationViewControllerDelegate: NSObjectProtocol {
     func numberOfViewControllers () -> Int
     func viewControllerAtIndex(index: UInt) -> UIViewController
 }
 
 class ModalNotificationViewController: UIViewController {
-    let delegate: ModalNotificationViewControllerDelegate
+    weak var delegate: ModalNotificationViewControllerDelegate?
     @lazy var animator: UIDynamicAnimator = {
         let animator = UIDynamicAnimator(referenceView: self.view)
         return animator
@@ -61,7 +61,7 @@ class ModalNotificationViewController: UIViewController {
             removeBehavioursForCurrentController()
         }
         
-        currentViewController = delegate.viewControllerAtIndex(index)
+        currentViewController = delegate?.viewControllerAtIndex(index)
         
         if let currentViewController = currentViewController {
             // Add to self
@@ -107,7 +107,7 @@ class ModalNotificationViewController: UIViewController {
     }
     
     func checkForLastViewController() {
-        if index == delegate.numberOfViewControllers() + 1 {
+        if index == delegate!.numberOfViewControllers() + 1 {
             self.presentingViewController?.dismissModalViewControllerAnimated(true)
         }
     }
