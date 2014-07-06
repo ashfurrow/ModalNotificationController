@@ -36,7 +36,7 @@ class ModalNotificationViewController: UIViewController {
     
     init(delegate: ModalNotificationViewControllerDelegate) {
         assert(delegate.numberOfViewControllers() > 0, "Number of view controllers must be at least one")
-        self.delegate = delegate;
+        self.delegate = delegate
         index = 0
         super.init(nibName: nil, bundle: nil)
     }
@@ -120,7 +120,7 @@ class ModalNotificationViewController: UIViewController {
         if (panRecognizer.state == .Began) {
             animator.removeBehavior(snapBehaviour)
             animator.removeBehavior(pushBehaviour)
-            let centerOffset = UIOffsetMake(boxLocation.x - CGRectGetMidX(currentViewController!.view.bounds), boxLocation.y - CGRectGetMidY(currentViewController!.view.bounds));
+            let centerOffset = UIOffsetMake(boxLocation.x - CGRectGetMidX(currentViewController!.view.bounds), boxLocation.y - CGRectGetMidY(currentViewController!.view.bounds))
             attachmentBehaviour = UIAttachmentBehavior(item: currentViewController!.view, offsetFromCenter: centerOffset, attachedToAnchor: location)
             animator.addBehavior(attachmentBehaviour)
         } else if (panRecognizer.state == .Changed) {
@@ -161,9 +161,9 @@ class ModalNotificationViewController: UIViewController {
                 
                 // rotation direction is dependent upon which corner was pushed relative to the center of the view
                 // when velocity.y is positive, pushes to the right of center rotate clockwise, left is counterclockwise
-                var direction = Float((location.x < view.center.x) ? -1.0 : 1.0);
+                var direction = Float((location.x < view.center.x) ? -1.0 : 1.0)
                 // when y component of velocity is negative, reverse direction
-                if (velocity.y < 0) { direction *= -1; }
+                if (velocity.y < 0) { direction *= -1 }
                 
                 // amount of angular velocity should be relative to how close to the edge of the view the force originated
                 // angular velocity is reduced the closer to the center the force is applied
@@ -185,7 +185,7 @@ class ModalNotificationViewController: UIViewController {
                 let delay = CGFloat(maximumDismissDelay - (Float(pushVelocity) / 10000.0))
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), {
                     self.addNextViewController(animated: true)
-                });
+                })
                 
             } else {
                 animator.addBehavior(snapBehaviour)

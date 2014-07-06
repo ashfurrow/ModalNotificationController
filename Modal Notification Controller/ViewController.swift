@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController, UIViewControllerTransitioningDelegate, ModalNotificationViewControllerDelegate {
     @IBAction func presentButtonWasPressed(sender: UIButton) {
         let viewController = ModalNotificationViewController(delegate: self)
-        viewController.transitioningDelegate = self;
-        viewController.modalPresentationStyle = .Custom;
+        viewController.transitioningDelegate = self
+        viewController.modalPresentationStyle = .Custom
         presentViewController(viewController, animated: true, completion: nil)
     }
     
