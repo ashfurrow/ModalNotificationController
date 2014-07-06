@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0D5EBF19694B19005E5D42 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5EBE19694B19005E5D42 /* PhotoViewController.swift */; };
+		5E0D5EC119694D9F005E5D42 /* swan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E0D5EC019694D9F005E5D42 /* swan.jpg */; };
 		5E4522EF1968454C003661FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4522EE1968454C003661FC /* AppDelegate.swift */; };
 		5E4522F11968454C003661FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4522F01968454C003661FC /* ViewController.swift */; };
 		5E4522F41968454C003661FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4522F21968454C003661FC /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 		5E45230C196846B3003661FC /* ModalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45230B196846B3003661FC /* ModalNotificationViewController.swift */; };
 		5E45230E19684804003661FC /* ModalNotificationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45230D19684804003661FC /* ModalNotificationAnimator.swift */; };
 		5E452311196868AF003661FC /* ScalarArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E452310196868AF003661FC /* ScalarArithmetic.swift */; };
+		5E49B23C1969519000269808 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E49B23B1969519000269808 /* TextViewController.swift */; };
+		5E49B23E1969525300269808 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E49B23D1969525300269808 /* ButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E0D5EBE19694B19005E5D42 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		5E0D5EC019694D9F005E5D42 /* swan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swan.jpg; sourceTree = "<group>"; };
 		5E4522E91968454C003661FC /* Modal Notification Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Modal Notification Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4522ED1968454C003661FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E4522EE1968454C003661FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,8 @@
 		5E45230B196846B3003661FC /* ModalNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNotificationViewController.swift; sourceTree = "<group>"; };
 		5E45230D19684804003661FC /* ModalNotificationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNotificationAnimator.swift; sourceTree = "<group>"; };
 		5E452310196868AF003661FC /* ScalarArithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalarArithmetic.swift; sourceTree = "<group>"; };
+		5E49B23B1969519000269808 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		5E49B23D1969525300269808 /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,10 @@
 			children = (
 				5E4522EE1968454C003661FC /* AppDelegate.swift */,
 				5E4522F01968454C003661FC /* ViewController.swift */,
+				5E0D5EBE19694B19005E5D42 /* PhotoViewController.swift */,
+				5E0D5EC019694D9F005E5D42 /* swan.jpg */,
+				5E49B23B1969519000269808 /* TextViewController.swift */,
+				5E49B23D1969525300269808 /* ButtonViewController.swift */,
 				5E4522F21968454C003661FC /* Main.storyboard */,
 				5E4522F51968454C003661FC /* Images.xcassets */,
 				5E4522EC1968454C003661FC /* Supporting Files */,
@@ -209,6 +221,7 @@
 			files = (
 				5E4522F41968454C003661FC /* Main.storyboard in Resources */,
 				5E4522F61968454C003661FC /* Images.xcassets in Resources */,
+				5E0D5EC119694D9F005E5D42 /* swan.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,11 +239,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E49B23E1969525300269808 /* ButtonViewController.swift in Sources */,
 				5E4522F11968454C003661FC /* ViewController.swift in Sources */,
 				5E45230E19684804003661FC /* ModalNotificationAnimator.swift in Sources */,
 				5E452311196868AF003661FC /* ScalarArithmetic.swift in Sources */,
 				5E45230C196846B3003661FC /* ModalNotificationViewController.swift in Sources */,
 				5E4522EF1968454C003661FC /* AppDelegate.swift in Sources */,
+				5E49B23C1969519000269808 /* TextViewController.swift in Sources */,
+				5E0D5EBF19694B19005E5D42 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

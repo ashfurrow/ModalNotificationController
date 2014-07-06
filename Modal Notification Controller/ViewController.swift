@@ -29,9 +29,18 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate, M
     }
     
     func viewControllerAtIndex(index: UInt) -> UIViewController {
-        let viewController = UIViewController(nibName: nil, bundle: nil)
-        viewController.view.backgroundColor = UIColor.orangeColor()
-        return viewController
+        switch index {
+        case 0:
+            return PhotoViewController()
+        case 1:
+            return TextViewController()
+        default:
+            return ButtonViewController()
+        }
+    }
+    
+    override func prefersStatusBarHidden() -> Bool  {
+        return true
     }
 }
 
