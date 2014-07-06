@@ -66,6 +66,14 @@ func viewControllerAtIndex(index: UInt) -> UIViewController {
 
 Just be careful that the view controller you vend back doesn't have a conflicting gesture recognizer, or else you'll never be able to dismiss it!
 
+Workarounds
+----------------
+
+Two radars were filed in the making of this project (made on iOS 8 Beta 2):
+
+- [UIWindow view hierarchy disappears when dismissing view controller with custom presentation](http://openradar.appspot.com/radar?id=5320103646199808)
+- [Cannot reference unowned object conforming to protocol](http://openradar.appspot.com/radar?id=5300501415460864)
+
 Credits
 ----------------
 
