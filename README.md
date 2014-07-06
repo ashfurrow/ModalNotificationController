@@ -8,7 +8,7 @@ The Goal
 
 My goal is to recreate the [Facebook Slingshot](https://itunes.apple.com/ca/app/slingshot/id878681557?mt=8) notification UI. This is different from other designs in that it presents an arbitrary number of things that can be dismissed by "flicking" them offscreen. Here's what it looks like:
 
-![Facebook Slingshot](http://cloud.ashfurrow.com/image/2p2u2f1E2w3K/goal.gif)
+![Facebook Slingshot](http://f.cl.ly/items/1F3M2C1g1l1Z1A1p0D2S/goal.gif)
 
 OK, cool. So how do we do this?
 
